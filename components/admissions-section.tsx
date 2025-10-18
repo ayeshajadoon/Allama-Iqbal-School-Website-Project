@@ -62,7 +62,7 @@ export function AdmissionsSection() {
               Learn More
             </Button>
           </Link>
-          <a href="/application-form.pdf" download>
+          <a href="/Admission_Form.pdf" download>
             <Button
               size="lg"
               variant="outline"

@@ -45,7 +45,7 @@ export function Navigation() {
           <Link href="/" className="flex items-center space-x-2">
             <div className="w-10 h-10 rounded-full flex items-center justify-center bg-background">
               <span className="text-primary-foreground text-lg">
-                <img src="/logo.png" alt="" />
+                <img src="/school_logo.png" alt="" />
               </span>
             </div>
             <span className={`font-semibold text-lg hidden sm:block transition-colors duration-300 ${

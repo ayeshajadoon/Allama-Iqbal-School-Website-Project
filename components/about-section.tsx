@@ -75,7 +75,7 @@ export function AboutSection() {
           </div>
           <div className="fade-in order-1 md:order-2">
             <img
-              src="/professional-principal-portrait.png"
+              src="/principal_portrait.jpg"
               alt="Principal"
               className="rounded-lg shadow-xl w-full hover:shadow-2xl transition-shadow duration-300"
             />

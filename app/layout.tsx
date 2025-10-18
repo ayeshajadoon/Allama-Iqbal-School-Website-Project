@@ -12,11 +12,47 @@ const poppins = Poppins({
 })
 
 export const metadata: Metadata = {
-  title: "Allama Iqbal Model School - Nurturing Minds, Building Futures",
+  title: "Allama Iqbal Model High School Serai Saleh",
   description:
     "A premier educational institution offering quality education from Playgroup to Matric with modern facilities and experienced faculty.",
-  generator: "v0.app",
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/android-chrome-192x192.png",
+  },
+  keywords: [
+    "Allama Iqbal Model School",
+    "Allama Iqbal Model High School Serai Saleh",
+    "Allama Iqbal Model High School website",
+    "Allama Iqbal Model High School",
+    "school in Abbottabad",
+    "schools in Haripur",
+    "schools in Serai Saleh",
+    "Allama Iqbal School Serai Saleh",
+    "matric education",
+    "Pakistan school",
+  ],
+  metadataBase: new URL("https://aims-rose.vercel.app"),
+  alternates: {
+    canonical: "https://aims-rose.vercel.app",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+  openGraph: {
+    title: "Allama Iqbal Model High School Serai Saleh",
+    description:
+      "Providing quality education from Playgroup to Matric with experienced teachers and modern facilities.",
+    url: "https://aims-rose.vercel.app",
+    siteName: "Allama Iqbal Model High School Serai Saleh",
+    locale: "en_PK",
+    type: "website",
+  },
+  verification: {
+    google: "fa1d24e92bcb1c49"
+  },
 }
+
 
 export default function RootLayout({
   children,

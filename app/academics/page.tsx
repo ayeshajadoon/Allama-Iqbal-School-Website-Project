@@ -279,7 +279,7 @@ export default function AcademicsPage() {
             </Card>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href="/application-form.pdf" download className="flex justify-center w-full sm:w-auto">
+              <a href="/Admission_Form.pdf" download className="flex justify-center w-full sm:w-auto">
                 <Button
                   size="lg"
                   className="flex items-center transition-transform duration-200 hover:scale-105 hover:shadow-lg w-full sm:w-auto justify-center"

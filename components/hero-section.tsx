@@ -67,8 +67,8 @@ export function HeroSection() {
       {/* Content */}
       <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
         <div className="fade-in">
-          <div className="w-30 h-30 bg-white rounded-full flex items-center justify-center mx-auto mb-6 shadow-2xl">
-            <span className="text-primary font-bold text-2xl"> <img src="logo.png" alt="" /> </span>
+          <div className="w-40 h-40 bg-white rounded-full flex items-center justify-center mx-auto mb-6 shadow-2xl">
+            <span className="text-primary font-bold text-2xl"> <img src="school_logo.png" alt="" /> </span>
           </div>
           <h1 className="text-4xl md:text-6xl font-bold mb-4 text-balance drop-shadow-2xl">
              Allama Iqbal Model High School
