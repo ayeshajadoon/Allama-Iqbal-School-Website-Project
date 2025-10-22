@@ -69,7 +69,7 @@ export function AboutSection() {
             <div className="flex items-center">
               <div>
                 <p className="font-semibold drop-shadow-sm">Khurram Bashir                </p>
-                <p className="text-sm text-foreground/70">Principal</p>
+                <p className="text-sm text-foreground/70">Managing Director</p>
               </div>
             </div>
           </div>

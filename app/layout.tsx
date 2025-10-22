@@ -49,10 +49,9 @@ export const metadata: Metadata = {
     type: "website",
   },
   verification: {
-    google: "fa1d24e92bcb1c49"
+    google: "fa1d24e92bcb1c49",
   },
 }
-
 
 export default function RootLayout({
   children,
@@ -62,6 +61,37 @@ export default function RootLayout({
   return (
     <html lang="en" className={poppins.variable}>
       <body className="font-sans antialiased">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": ["EducationalOrganization", "School"],
+              name: "Allama Iqbal Model High School Serai Saleh",
+              url: "https://aims-rose.vercel.app",
+              description:
+                "A premier educational institution offering quality education from Playgroup to Matric with modern facilities and experienced faculty.",
+              logo: "https://aims-rose.vercel.app/favicon.ico",
+              contactPoint: {
+                "@type": "ContactPoint",
+                telephone: "+92 312 5912464",
+                contactType: "Administration",
+              },
+              address: {
+                "@type": "PostalAddress",
+                streetAddress: "Serai Saleh",
+                addressLocality: "Haripur",
+                addressRegion: "KPK",
+                addressCountry: "PK",
+              },
+              sameAs: [
+                "https://www.facebook.com/share/1GDZUt11A5/", // if you have social pages, add here
+              ],
+            }),
+          }}
+        />
+
+
         <Suspense
           fallback={
             <div className="flex items-center justify-center min-h-screen">
@@ -76,3 +106,4 @@ export default function RootLayout({
     </html>
   )
 }
+
