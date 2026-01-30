@@ -16,6 +16,7 @@ import {
   CheckCircle,
 } from "lucide-react"
 import Link from "next/link"
+import Image from "next/image"
 
 export default function AcademicsPage() {
   const classes = [
@@ -214,6 +215,87 @@ export default function AcademicsPage() {
                 </CardContent>
               </Card>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Uniform */}
+      <section className="py-20">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl font-bold text-center mb-12 slide-up">School Uniform</h2>
+          
+          <div className="grid md:grid-cols-2 gap-8 lg:gap-12">
+            {/* Boys Uniform */}
+            <Card className="fade-in overflow-hidden">
+              <div className="relative w-full h-64 md:h-80">
+                <Image
+                  src="/placeholder.jpg"
+                  alt="Boys School Uniform"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                />
+              </div>
+              <CardHeader>
+                <CardTitle className="text-2xl">Boys Uniform</CardTitle>
+              </CardHeader>
+              <CardContent className="space-y-3">
+                <p className="text-muted-foreground">
+                  <strong>Shirt:</strong> Blue cotton shirt.
+                </p>
+                <p className="text-muted-foreground">
+                  <strong>Trousers:</strong> Navy blue trousers with proper fit and length.
+                </p>
+                <p className="text-muted-foreground">
+                  <strong>Belt:</strong> Black leather belt with simple buckle (optional for younger students).
+                </p>
+                <p className="text-muted-foreground">
+                  <strong>Shoes:</strong> Black school shoes (joggers not allowed) with black socks.
+                </p>
+                <p className="text-muted-foreground">
+                  <strong>Additional:</strong> Navy-blue tie is must.
+                </p>
+              </CardContent>
+            </Card>
+
+            {/* Girls Uniform */}
+            <Card className="fade-in overflow-hidden">
+              <div className="relative w-full h-64 md:h-80">
+                <Image
+                  src="/female.png"
+                  alt="Girls School Uniform"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                />
+              </div>
+              <CardHeader>
+                <CardTitle className="text-2xl">Girls Uniform</CardTitle>
+              </CardHeader>
+              <CardContent className="space-y-3">
+                <p className="text-muted-foreground">
+                  <strong>Shirt:</strong> Blue cotton shirt with school logo embroidered on the right pocket.
+                </p>
+                <p className="text-muted-foreground">
+                  <strong>Trousers:</strong> White shalwar
+                </p>
+                <p className="text-muted-foreground">
+                  <strong>Dupatta:</strong> Plain white dupatta with a navy blue lace border, neatly draped in a folded (pleated) style.
+                </p>
+                <p className="text-muted-foreground">
+                  <strong>Shoes:</strong> Black school shoes (joggers not allowed) with black socks.
+                </p>
+                <p className="text-muted-foreground">
+                  <strong>Winter:</strong> Navy Blue coat with navy blue scarf.
+                </p>
+              </CardContent>
+            </Card>
+          </div>
+
+          <div className="mt-8 text-center">
+            <p className="text-muted-foreground text-sm">
+              All uniforms must be clean, well-fitted, and properly maintained. Uniforms can be purchased from Sunny Garments or Usman Garments located in Haripur.
+            </p>
           </div>
         </div>
       </section>

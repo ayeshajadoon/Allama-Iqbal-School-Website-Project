@@ -7,32 +7,49 @@ import { ChevronLeft, ChevronRight } from "lucide-react"
 
 const galleryImages = [
   {
-    src: "/school-classroom-modern-learning.jpg",
+    src: "/2.jpg",
     alt: "Modern Classroom",
     category: "Facilities",
   },
   {
-    src: "/students-science-laboratory-experiment.jpg",
+    src: "/1.jpg",
     alt: "Science Laboratory",
     category: "Facilities",
   },
   {
-    src: "/school-library-students-reading.jpg",
+    src: "/4.jpg",
     alt: "School Library",
     category: "Facilities",
   },
   {
-    src: "/school-sports-day-students-activities.jpg",
+    src: "/e1.jpg",
     alt: "Sports Day",
     category: "Events",
   },
   {
-    src: "/school-annual-function-performance.jpg",
+    src: "/e5.jpg",
     alt: "Annual Function",
     category: "Events",
   },
   {
-    src: "/computer-lab-students-technology.jpg",
+    src: "/e2.jpg",
+    category: "Events",
+  },
+  {
+    src: "/e3.jpg",
+    category: "Events",
+  },
+  {
+    src: "/e4.jpg",
+    category: "Events",
+  },
+  {
+    src: "/e6.jpg",
+    alt: "Annual Function",
+    category: "Events",
+  },
+  {
+    src: "/3.jpg",
     alt: "Computer Lab",
     category: "Facilities",
   },
