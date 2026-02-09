@@ -2,12 +2,15 @@
 
 import { useState, useEffect } from "react"
 import Link from "next/link"
+import { useRouter, usePathname } from "next/navigation"
 import { Button } from "@/components/ui/button"
 import { Menu, X } from "lucide-react"
 
 export function Navigation() {
   const [isOpen, setIsOpen] = useState(false)
   const [isScrolled, setIsScrolled] = useState(false)
+  const router = useRouter()
+  const pathname = usePathname()
 
   useEffect(() => {
     const handleScroll = () => {
@@ -26,11 +29,19 @@ export function Navigation() {
   ]
 
   const handleNavClick = (href: string) => {
+    setIsOpen(false)
+    
+    // If we're not on the home page, navigate to home first
+    if (pathname !== "/") {
+      router.push(`/${href}`)
+      return
+    }
+    
+    // If we're on the home page, just scroll to the section
     const element = document.querySelector(href)
     if (element) {
       element.scrollIntoView({ behavior: "smooth" })
     }
-    setIsOpen(false)
   }
 
   return (
