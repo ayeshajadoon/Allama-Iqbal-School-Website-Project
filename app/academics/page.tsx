@@ -228,14 +228,15 @@ export default function AcademicsPage() {
             {/* Boys Uniform */}
             <Card className="fade-in overflow-hidden">
               <div className="relative w-full h-64 md:h-80">
-                <Image
-                  src="/placeholder.jpg"
-                  alt="Boys School Uniform"
-                  fill
-                  className="object-cover"
-                  sizes="(max-width: 768px) 100vw, 50vw"
-                />
-              </div>
+                  <Image
+                    src="/boys_uniform.jpeg"
+                    alt="Boys School Uniform"
+                    fill
+                    className="object-contain"
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                  />
+                </div>
+              
               <CardHeader>
                 <CardTitle className="text-2xl">Boys Uniform</CardTitle>
               </CardHeader>
@@ -244,7 +245,7 @@ export default function AcademicsPage() {
                   <strong>Shirt:</strong> Blue cotton shirt.
                 </p>
                 <p className="text-muted-foreground">
-                  <strong>Trousers:</strong> Navy blue trousers with proper fit and length.
+                  <strong>Trousers:</strong> Navy blue pants with proper fit and length.
                 </p>
                 <p className="text-muted-foreground">
                   <strong>Belt:</strong> Black leather belt with simple buckle (optional for younger students).
@@ -262,10 +263,10 @@ export default function AcademicsPage() {
             <Card className="fade-in overflow-hidden">
               <div className="relative w-full h-64 md:h-80">
                 <Image
-                  src="/female.png"
+                  src="/girls_uniform.jpeg"
                   alt="Girls School Uniform"
                   fill
-                  className="object-cover"
+                  className="object-contain"
                   sizes="(max-width: 768px) 100vw, 50vw"
                 />
               </div>
